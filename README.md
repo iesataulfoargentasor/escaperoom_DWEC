@@ -1,5 +1,17 @@
 # Escape Room JavaScript · Laboratorio DWEC
 
+**Actividad publicada:** https://iesataulfoargentasor.github.io/escaperoom_DWEC/
+
+**Repositorio:** https://github.com/iesataulfoargentasor/escaperoom_DWEC
+
+### Configuración de esta publicación
+
+Este repositorio ya tiene GitHub Pages configurado desde la rama `gh-pages`, carpeta raíz. `main` contiene el código fuente y `gh-pages` contiene únicamente la aplicación compilada. No cambies Pages a GitHub Actions siguiendo el ejemplo genérico de la sección 7: la sesión utilizada para publicar no dispone de permiso para añadir workflows personalizados. El ejemplo se conserva en `docs/pages-workflow.yml.example`, sin activarlo.
+
+Los cambios en `main` **no publican automáticamente** una nueva versión: ejecuta `npm ci` y `npm run build` y actualiza en `gh-pages` el contenido de `dist` (no la carpeta `dist` anidada), conservando `.nojekyll`. Puedes hacerlo desde GitHub, seleccionando `gh-pages` y usando **Add file → Upload files**. GitHub Pages vuelve a desplegar al confirmar esos cambios; verifica el resultado en Actions y en la URL publicada. Si más adelante habilitas permisos de workflows, podrás activar la alternativa automática explicada en la sección 7.
+
+El material docente sigue en la entrega local/ZIP, excluido de este repositorio. Los tests públicos sí contienen soluciones de referencia.
+
 Proyecto completo en **Vite + React + TypeScript + Tailwind CSS**, basado en las seis salas del TSX original. El alumnado escribe JavaScript; TypeScript se utiliza para desarrollar la aplicación.
 
 No necesitas construir el proyecto desde una plantilla: este directorio ya contiene todos los archivos. Descomprime el ZIP completo antes de ejecutar comandos. No abras `index.html` con doble clic: hay que usar un servidor local o un alojamiento web.

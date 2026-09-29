@@ -1,6 +1,6 @@
 # Validación de la entrega
 
-Comprobaciones realizadas entre el 29 y el 30 de septiembre de 2026 en Windows, Node 22.12.0, npm 10.9.0 y Chrome 154.0.8037.59. La guía recomienda Node 24 LTS para nuevas instalaciones. No se ha publicado en ninguna cuenta de alojamiento.
+Comprobaciones realizadas entre el 29 y el 30 de septiembre de 2026 en Windows, Node 22.12.0, npm 10.9.0 y Chrome 154.0.8037.59. La guía recomienda Node 24 LTS para nuevas instalaciones. Posteriormente se ha configurado la publicación real en GitHub Pages desde la rama `gh-pages`; consulta la URL y configuración al principio del README.
 
 | Comprobación | Resultado |
 |---|---|
@@ -19,7 +19,7 @@ Los E2E verifican errores de sintaxis, función ausente, retornos undefined/circ
 
 Versiones resueltas por `package-lock.json`: React/React DOM 19.3.0, Vite 7.3.6, TypeScript 5.9.3, Tailwind 4.3.3, Vitest 4.1.11 y Playwright 1.63.0. Se sustituyó una versión anterior de Vitest tras detectar un aviso de seguridad. El instalador npm 10 falló al resolver esa actualización; se generó el lock con npm 11 y después se verificó `npm ci` correctamente con npm 10.9.0.
 
-Estas comprobaciones no son una auditoría de seguridad ni certifican WCAG. No se ha verificado manualmente con Safari, Firefox, lectores de pantalla ni dispositivos móviles físicos; la vista móvil se probó en Chrome con viewport de 360 px. Tampoco se han ejecutado Actions en GitHub ni despliegues reales en Vercel/Netlify: se entregan configuración e instrucciones. Comprueba la URL de producción y las políticas de tu centro antes de compartirla.
+Estas comprobaciones no son una auditoría de seguridad ni certifican WCAG. No se ha verificado manualmente con Safari, Firefox, lectores de pantalla ni dispositivos móviles físicos; la vista móvil se probó en Chrome con viewport de 360 px. No se ha ejecutado el workflow personalizado de pruebas en GitHub ni se ha desplegado en Vercel/Netlify. La publicación de GitHub Pages utiliza el proceso de Pages asociado a la rama `gh-pages`.
 
 Para repetir las pruebas:
 
